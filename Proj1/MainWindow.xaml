@@ -1,0 +1,34 @@
+﻿<Window x:Class="Proj1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proj1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <Label Content="Tên"/>
+            <TextBox Text="{Binding Name ,UpdateSourceTrigger=PropertyChanged}" Margin="2" Width="100" VerticalAlignment="Center" />
+            <Label Content="SĐT"/>
+            <TextBox Text="{Binding Number ,UpdateSourceTrigger=PropertyChanged}" Margin="2" Width="100" VerticalAlignment="Center"/>
+            <Label Content="email"/>
+            <TextBox Text="{Binding Email ,UpdateSourceTrigger=PropertyChanged}" Margin="2" Width="150" VerticalAlignment="Center"/>
+            <Button Margin="2" Command="{Binding AddCommand}" Content="Add" Background="Green"/>
+            <Button Margin="2" Command="{Binding DelCommand}" Content="Xóa" Background="Red"/>
+            <Button Margin="2" Command="{Binding EditCommand}" Content="Sửa" Background="Orange"/>
+        </StackPanel>
+        <DataGrid Grid.Row="1" CanUserAddRows="False" AutoGenerateColumns="False" ItemsSource="{Binding Users}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Phone Number" Binding="{Binding Number}"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
