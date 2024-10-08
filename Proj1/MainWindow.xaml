@@ -22,8 +22,8 @@
             <Button Margin="2" Command="{Binding DelCommand}" Content="Xóa" Background="Red"/>
             <Button Margin="2" Command="{Binding EditCommand}" Content="Sửa" Background="Orange"/>
         </StackPanel>
-        <DataGrid Grid.Row="1" CanUserAddRows="False" AutoGenerateColumns="False" ItemsSource="{Binding Users}">
-            <DataGrid.Columns>
+        <DataGrid Grid.Row="1" CanUserAddRows="False" AutoGenerateColumns="False" ItemsSource="{Binding Users}" SelectedItem="{Binding SelectedUser ,Mode=TwoWay}">
+            <DataGrid.Columns >
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Phone Number" Binding="{Binding Number}"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>

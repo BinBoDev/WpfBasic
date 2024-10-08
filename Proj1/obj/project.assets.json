@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\p.tan\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\p.tan\\Desktop\\WPF\\Exam\\Proj1\\Proj1.csproj",
+      "projectUniqueName": "D:\\Wpf_Basic\\WpfApp1\\WpfBasic\\Proj1\\Proj1.csproj",
       "projectName": "Proj1",
-      "projectPath": "C:\\Users\\p.tan\\Desktop\\WPF\\Exam\\Proj1\\Proj1.csproj",
-      "packagesPath": "C:\\Users\\p.tan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\p.tan\\Desktop\\WPF\\Exam\\Proj1\\obj\\",
+      "projectPath": "D:\\Wpf_Basic\\WpfApp1\\WpfBasic\\Proj1\\Proj1.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\Wpf_Basic\\WpfApp1\\WpfBasic\\Proj1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\p.tan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
